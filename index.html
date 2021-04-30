@@ -20,70 +20,72 @@
 						<div class="card-3d-wrap mx-auto">
 							<div class="card-3d-wrapper">
 								<div class="card-front">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Log In</h4>
-											<div class="form-group">
-                                                <input type="text" name="logusername" 
-                                                class="form-style" 
-                                                placeholder="Your Username" 
-                                                id="logusername" 
-                                                autocomplete="none">
-												<i class="input-icon uil uil-user"></i>
-											</div>	
-											<div class="form-group mt-2">
-                                                <input type="password" name="logpass" 
-                                                class="form-style" 
-                                                placeholder="Your Password" 
-                                                id="logpass" autocomplete="none">
-												<i class="input-icon uil uil-lock-alt"></i>
+									<form action="login.php" method="post">
+										<div class="center-wrap">
+											<div class="section text-center">
+												<h4 class="mb-4 pb-3">Log In</h4>
+												<div class="form-group">
+													<input type="text" name="username" 
+													class="form-style" 
+													placeholder="Your Username" 
+													id="username" 
+													autocomplete="none">
+													<i class="input-icon uil uil-user"></i>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="password" name="password" 
+													class="form-style" 
+													placeholder="Your Password" 
+													id="password" autocomplete="none">
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<button type="submit" class="btn mt-4"><a>submit</a></button>
+												<p class="mb-0 mt-4 text-center">
+													<a href="#" class="link">Forgot your password?</a>
+												</p>
 											</div>
-											<a href="#" class="btn mt-4">submit</a>
-                            				<p class="mb-0 mt-4 text-center">
-                                                <a href="#" class="link">Forgot your password?</a>
-                                            </p>
-				      					</div>
-			      					</div>
+										</div>
+									</form>
 			      				</div>
 								<div class="card-back">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Sign Up</h4>
-											<div class="form-group">
-												<input type="email" name="logemail" 
-                                                class="form-style" 
-                                                placeholder="Your Email" 
-                                                id="logemail" autocomplete="none">
-												<i class="input-icon uil uil-at"></i>
-											</div>	
-											<div class="form-group mt-2">
-                                                <input type="text" name="logusername" 
-                                                class="form-style" 
-                                                placeholder="Your Username" 
-                                                id="logusername" 
-                                                autocomplete="none">
-												<i class="input-icon uil uil-user"></i>
-											</div>	
-											<div class="form-group mt-2">
-                                                <input type="password" name="logpass" 
-                                                class="form-style" 
-                                                placeholder="Your Password" 
-                                                id="logpass" 
-                                                autocomplete="none">
-												<i class="input-icon uil uil-lock-alt"></i>
+									<form action="signup.php" method="post">
+										<div class="center-wrap">
+											<div class="section text-center">
+												<h4 class="mb-4 pb-3">Sign Up</h4>
+												<div class="form-group">
+													<input type="text" name="nama" 
+													class="form-style" 
+													placeholder="Your name" 
+													id="nama" 
+													autocomplete="none">
+													<i class="input-icon uil uil-user"></i>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="text" name="username" 
+													class="form-style" 
+													placeholder="Your Username" 
+													id="username" 
+													autocomplete="none">
+													<i class="input-icon uil uil-user"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="password" name="password" 
+													class="form-style" 
+													placeholder="Your Password" 
+													id="password" 
+													autocomplete="none">
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<div class="form-group mt-2"disabled>
+													<select class="form-style" name="level" id="level">
+														<option value="Pelanggan">Pelanggan</option>
+													</select>
+													<i class="input-icon uil uil-robot"></i>
+												</div>
+												<button type="submit" name="simpan" class="btn mt-4"><a>submit</a></button>
 											</div>
-											<div class="form-group mt-2">
-                                                <input type="text" name="logmaha" 
-                                                class="form-style" 
-                                                placeholder="Mahasiswa" 
-                                                id="logmaha"
-												value="mahasiswa"
-                                                autocomplete="none" disabled>
-												<i class="input-icon uil uil-user"></i>
-											</div>	
-											<a href="#" class="btn mt-4">submit</a>
-				      					</div>
-			      					</div>
+										</div>
+									</form>
 			      				</div>
 			      			</div>
 			      		</div>
